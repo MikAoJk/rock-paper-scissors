@@ -3,8 +3,10 @@ import Game from "@/components/Game";
 
 export default function Home() {
     return (
-        <main className="flex min-h-screen flex-col items-center justify-between md:p-12 font-mono">
+        <main className="flex min-h-screen items-center flex-col md:p-10 justify-between font-mono">
+            <div className="items-center justify-between font-mono text-sm flex">
                 <Game/>
+            </div>
         </main>
-)
+    )
 }

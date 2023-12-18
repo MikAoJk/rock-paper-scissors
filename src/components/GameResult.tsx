@@ -4,10 +4,12 @@ import {GamePlay} from "@/components/Game";
 const GameResult = (gamePlay: GamePlay) => {
 
     return (
-        <div className="md:inline-block m-2 flex flex-col text-center md:m-5 md:text-5xl">
-            <p className="m-12">Winner: {gamePlay.winner}</p>
-            <p>Your choice: {gamePlay.playerVal}</p>
-            <p>Computers choice: {gamePlay.computerVal}</p>
+        <div className="m-2 md:m-5 md:text-xl">
+            <p className="text-3xl">Winner: {gamePlay.winner}</p>
+            <div className="mt-4">
+                <p>Your choice: {gamePlay.playerVal}</p>
+                <p>Computers choice: {gamePlay.computerVal}</p>
+            </div>
         </div>
     )
 

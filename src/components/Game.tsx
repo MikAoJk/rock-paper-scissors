@@ -55,9 +55,9 @@ export const Game = () => {
 
 
     return (
-        <div>
-            <div className="z-5 items-center justify-between font-mono text-sm md:text-5xl flex">
-                <button className="className=text-base bg-green-600 text-white rounded cursor-pointer m-5"
+        <div className="z-5 items-center justify-between font-mono text-sm md:text-5xl">
+            <div>
+                <button className="text-base bg-green-600 text-white rounded cursor-pointer m-5"
                         onClick={() => decision("ROCK")}>
                     <svg xmlns="http://www.w3.org/2000/svg" height="64" width="70"
                          viewBox="0 0 512 512">
@@ -66,7 +66,7 @@ export const Game = () => {
                     </svg>
                     Rock
                 </button>
-                <button className="className=text-base bg-green-600 text-white rounded cursor-pointer m-5"
+                <button className="text-base bg-green-600 text-white rounded cursor-pointer m-5"
                         onClick={() => decision("PAPER")}>
                     <svg xmlns="http://www.w3.org/2000/svg" height="64" width="70"
                          viewBox="0 0 448 512">
@@ -75,7 +75,7 @@ export const Game = () => {
                     </svg>
                     Paper
                 </button>
-                <button className="className=text-base bg-green-600 text-white rounded cursor-pointer m-5"
+                <button className="text-base bg-green-600 text-white rounded cursor-pointer m-5"
                         onClick={() => decision("SCISSORS")}>
                     <svg xmlns="http://www.w3.org/2000/svg" height="64" width="70"
                          viewBox="0 0 448 512">
@@ -85,9 +85,7 @@ export const Game = () => {
                     Scissors
                 </button>
             </div>
-            <div>
-                {gamePlay.playerVal && GameResult(gamePlay)}
-            </div>
+            {gamePlay.playerVal && GameResult(gamePlay)}
         </div>
     );
 }
