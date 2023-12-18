@@ -4,8 +4,8 @@ import {GamePlay} from "@/components/Game";
 const GameResult = (gamePlay: GamePlay) => {
 
     return (
-        <div className="m-2 md:m-5 md:text-xl">
-            <p className="text-3xl">Winner: {gamePlay.winner}</p>
+        <div className="m-2 md:m-5 md:text-l">
+            <p className="text-2xl">Winner: {gamePlay.winner}</p>
             <div className="mt-4">
                 <p>Your choice: {gamePlay.playerVal}</p>
                 <p>Computers choice: {gamePlay.computerVal}</p>
