@@ -55,7 +55,7 @@ export const Game = () => {
 
 
     return (
-        <div className="z-5 items-center justify-between font-mono text-sm md:text-5xl">
+        <div className="z-5 items-center justify-between font-mono text-sm">
             <div>
                 <button className="text-base bg-green-600 text-white rounded cursor-pointer m-5"
                         onClick={() => decision("ROCK")}>
