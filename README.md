@@ -1,4 +1,5 @@
 # rock-paper-scissors
+Simple rock paper scissors game
 
 ## Technologies used
 * Bun
